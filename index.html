@@ -69,7 +69,9 @@
             для вашего бизнеса
           </h1>
 
-          <button data-modal-open class="button" type="button">Заказать услугу</button>
+          <button data-modal-open class="button" type="button">
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -143,34 +145,34 @@
           <ul class="works-site">
             <li class="item-work">
               <div class="work-img">
-              <img
-                src="./images/work/work-computer.jpg"
-                alt="Работа за компютером"
-                width="370"
-              />
-              <h3 class="subtitle-work">Десктопные приложения</h3>
+                <img
+                  src="./images/work/work-computer.jpg"
+                  alt="Работа за компютером"
+                  width="370"
+                />
+                <h3 class="subtitle-work">Десктопные приложения</h3>
               </div>
             </li>
 
             <li class="item-work">
               <div class="work-img">
-              <img
-                src="./images/work/work-smartphone.jpg"
-                alt="Работа с мобильным интерфейсом"
-                width="370"
-              />
-              <h3 class="subtitle-work">Мобильные приложения</h3>
+                <img
+                  src="./images/work/work-smartphone.jpg"
+                  alt="Работа с мобильным интерфейсом"
+                  width="370"
+                />
+                <h3 class="subtitle-work">Мобильные приложения</h3>
               </div>
             </li>
 
             <li class="item-work">
               <div class="work-img">
-              <img
-                src="./images/work/work-color.jpg"
-                alt="Работа с цветом"
-                width="370"
-              />
-              <h3 class="subtitle-work">Дизайнерские решения</h3>
+                <img
+                  src="./images/work/work-color.jpg"
+                  alt="Работа с цветом"
+                  width="370"
+                />
+                <h3 class="subtitle-work">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
@@ -513,19 +515,42 @@
             </li>
           </ul>
         </div>
+
+        <!-- send-footer -->
+        <div class="send">
+          <h3 class="title-send">Подпишитесь на рассылку</h3>
+          <form name="form-send">
+            <div class="send-email">
+              <label for="email"></label>
+              <input
+                class="email-user"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button class="send-button" type="submit">
+                Подписаться
+                <svg class="icon-button">
+                  <use href="./images/sprite-icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button data-modal-close class="close-modal" type="button">
-            <svg class="icon-close-modal">
-              <use href="./images/sprite-icons.svg#icon-close-modal"></use>
-            </svg>
-          </button>
-        </div>
+      <div class="modal">
+        <button data-modal-close class="close-modal" type="button">
+          <svg class="icon-close-modal">
+            <use href="./images/sprite-icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
       </div>
+    </div>
   </body>
 
   <script src="./js/modal.js"></script>
