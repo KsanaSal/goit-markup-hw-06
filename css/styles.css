@@ -694,10 +694,10 @@ margin-left: auto;
     opacity: 0;
     pointer-events: none;
 }
-
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.8);
 }
+
 .modal {
     position: absolute;
     top: 50%;
@@ -717,6 +717,7 @@ margin-left: auto;
     transition: transform 250ms var(--timing-function);
 }
 
+/* button close modal window */
 .close-modal {
     display: flex;
     align-items: center;
@@ -744,7 +745,7 @@ margin-left: auto;
     fill: currentColor;
 }
 
-
+/* form order modal window */
 .data-user {
     margin: 2px 40px 40px;
     border: 1px solid rgba(0, 0, 0);
@@ -758,6 +759,7 @@ margin-left: auto;
     line-height: 1.15;
     text-align: center;
 }
+
 .form-field {
     display: flex;
     flex-direction: column;
@@ -777,7 +779,33 @@ margin-left: auto;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    padding-left: 42px;
+    
 }
+.input-wrap {
+    position: relative;
+    color: var(--medium-dark-color-text);
+}
+.input-wrap input:focus,
+.input-wrap input:focus-visible {
+    border: 1px solid var(--accent-background-color);
+    outline: none;
+}
+.input-wrap input:focus ~ .icon-person {
+    color: var(--accent-color-text);
+}
+.icon-form {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    
+    width: 18px;
+    height: 18px;
+
+    fill: currentColor;
+}
+
 .comment-user {
     width: 100%;
     height: 120px;
