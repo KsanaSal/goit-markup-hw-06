@@ -706,7 +706,6 @@ margin-left: auto;
     width: 528px;
     height: 581px;
     border-radius: 4px;
-    /* padding: 8px; */
 
     background-color: var(--light-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -732,12 +731,19 @@ margin-left: auto;
 
     background-color: var(--light-background-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
+    color: var(--dark-color-text);
 
+    transition: color 250ms var(--timing-function);
+}
+.close-modal:hover {
+    color: var(--accent-color-text);
+}
 .icon-close-modal {
     width: 18px;
     height: 18px;
+    fill: currentColor;
 }
+
 
 .data-user {
     margin: 2px 40px 40px;
