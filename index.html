@@ -552,48 +552,74 @@
 
         <form class="modal-form" name="form-order">
           <div class="data-user">
-            <h2 class="title-order">Оставьте свои данные, мы вам перезвоним</h2>
-            <div class="form-field">
-              <label for="name">Имя</label>
-              <div class="input-wrap">
-                <input type="text" name="name-user" id="name" />
-                <svg class="icon-form">
-                  <use href="./images/sprite-icons.svg#icon-person-black"></use>
-                </svg>
+            <div class="form-order">
+              <h2 class="title-order">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
+              <div class="form-field">
+                <label for="name">Имя</label>
+                <div class="input-wrap">
+                  <input type="text" name="name-user" id="name" />
+                  <svg class="icon-form">
+                    <use
+                      href="./images/sprite-icons.svg#icon-person-black"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="tel">Телефон</label>
+                <div class="input-wrap">
+                  <input type="tel" name="tel-user" id="tel" />
+                  <svg class="icon-form">
+                    <use
+                      href="./images/sprite-icons.svg#icon-phone-black"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Почта</label>
+                <div class="input-wrap">
+                  <input type="email" name="email-user" id="email" />
+                  <svg class="icon-form">
+                    <use
+                      href="./images/sprite-icons.svg#icon-email-black"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="comment">Комментарий</label>
+                <textarea
+                  class="comment-user"
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="Введите текст"
+                ></textarea>
               </div>
             </div>
-
-            <div class="form-field">
-              <label for="tel">Телефон</label>
-              <div class="input-wrap">
-                <input type="tel" name="tel-user" id="tel" />
-                <svg class="icon-form">
-                  <use href="./images/sprite-icons.svg#icon-phone-black"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="form-field">
-              <label for="email">Почта</label>
-              <div class="input-wrap">
-                <input type="email" name="email-user" id="email" />
-                <svg class="icon-form">
-                  <use href="./images/sprite-icons.svg#icon-email-black"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="form-field">
-              <label for="comment">Комментарий</label>
-              <textarea
-                class="comment-user"
-                name="comment"
-                id="comment"
-                cols="30"
-                rows="10"
-                placeholder="Введите текст"
-              ></textarea>
-            </div>
+            <label class="accept-rule">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="rules"
+                value="accept rules"
+              />
+              <span class="icon-checkbox"></span>
+              <svg class="icon-check">
+                    <use
+                      href="./images/sprite-icons.svg#icon-check"
+                    ></use>
+                  </svg>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="contract" href="#">Условия договора</a>
+            </label>
           </div>
         </form>
       </div>

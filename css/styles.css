@@ -2,6 +2,7 @@
     /* background color site */
     --light-background-color: #FFFFFF;
     --dark-background-color: #2F303A;
+    --darkmedium-background-color: #212121;
     --darklight-background-color: #AFB1B8;
     --medium-background-color: #F5F4FA;
     --lightdark-background-color: #ECECEC;
@@ -750,6 +751,10 @@ margin-left: auto;
     margin: 2px 40px 40px;
     border: 1px solid rgba(0, 0, 0);
 }
+.form-order {
+    margin-bottom: 20px;
+}
+
 .title-order {
     margin-bottom: 12px;
 
@@ -760,9 +765,12 @@ margin-left: auto;
     text-align: center;
 }
 
+/* form input */
 .form-field {
     display: flex;
     flex-direction: column;
+}
+.form-field:not(:last-child) {
     margin-bottom: 10px;
 }
 .form-field label {
@@ -791,7 +799,7 @@ margin-left: auto;
     border: 1px solid var(--accent-background-color);
     outline: none;
 }
-.input-wrap input:focus ~ .icon-person {
+.input-wrap input:focus ~ .icon-form {
     color: var(--accent-color-text);
 }
 .icon-form {
@@ -817,6 +825,64 @@ margin-left: auto;
     font-size: 12px;
     line-height: 1.167;
     letter-spacing: 0.01em;
+}
+.comment-user::placeholder {
     color: rgba(117, 117, 117, 0.5);
+}
+
+/* form checkbox */
+.accept-rule {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: var(--medium-light-color-text);
+    font-size: 14px;
+    line-height: 1.714;
+}
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.checkbox:checked + .icon-checkbox {
+    background-color: var(--accent-background-color);
+    border: 2px solid var(--accent-background-color);
+}
+.checkbox:checked ~ .icon-check {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+}
+.icon-checkbox {
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    background-color: var(--light-background-color);
+    border: 2px solid var(--darkmedium-background-color);
+    border-radius: 2px;
+}
+.icon-check {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+    fill-opacity: 0;
+    stroke-opacity: 0;
+}
+.contract {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--accent-color-text);
+    font-size: 14px;
+    line-height: 1.714;
 }
 /* end modal window site */
