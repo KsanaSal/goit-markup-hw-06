@@ -8,6 +8,7 @@
     --lightdark-background-color: #ECECEC;
     --lightmid-background-color: #EEEEEE;
     --accent-background-color: #2196F3;
+    --accent-hover-background-color: #188CE8;
     --accent-card-bg-color: rgba(33, 150, 243, 0.9);
 
     /* text color */
@@ -212,10 +213,15 @@ line-height: 1.192;
     text-transform: uppercase;
 }
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 4px;
-    padding: 10px 32px;
     border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     min-width: 200px;
 
     background-color: var(--accent-background-color);
@@ -225,10 +231,14 @@ line-height: 1.192;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    transition: background-color 250ms var(--timing-function);
+}
+.button:hover,
+.button:focus {
+    background-color: var(--accent-hover-background-color);
 }
 
 /* section specific */
@@ -749,7 +759,6 @@ margin-left: auto;
 /* form order modal window */
 .data-user {
     margin: 2px 40px 40px;
-    border: 1px solid rgba(0, 0, 0);
 }
 .form-order {
     margin-bottom: 20px;
@@ -833,8 +842,11 @@ margin-left: auto;
 /* form checkbox */
 .accept-rule {
     display: flex;
+    justify-content: center;
     position: relative;
     align-items: center;
+    margin-bottom: 30px;
+
     color: var(--medium-light-color-text);
     font-size: 14px;
     line-height: 1.714;
@@ -871,7 +883,7 @@ margin-left: auto;
 .icon-check {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 12px;
     transform: translateY(-50%);
     width: 16px;
     height: 15px;
