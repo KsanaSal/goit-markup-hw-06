@@ -216,9 +216,11 @@ line-height: 1.192;
     display: flex;
     align-items: center;
     justify-content: center;
+
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
+
     border-radius: 4px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -643,6 +645,7 @@ margin-left: auto;
     display: flex;
 }
 .email-user {
+    margin-right: 12px;
     padding: 15px 16px;
     width: 358px;
     height: 50px;
@@ -651,6 +654,12 @@ margin-left: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+}
+.email-user:focus,
+.email-user:focus-visible {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    color: var(--light-color-text);
 }
 .email-user::placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -661,15 +670,17 @@ margin-left: auto;
 
 .send-button {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 12px;
-    padding: 10px 29px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
     min-width: 200px;
 
-    background: #2196F3;
+    background: var(--accent-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border: 0;
+    border: none;
 
     color: var(--light-color-text);
     font-weight: 700;
@@ -677,6 +688,12 @@ margin-left: auto;
     line-height: 1.875;
     text-align: center;
     letter-spacing: 0.06em;
+
+    transition: background-color 250ms var(--timing-function);
+}
+.send-button:hover,
+.send-button:focus {
+    background-color: var(--accent-hover-background-color);
 }
 .icon-button {
     margin-left: 10px;
