@@ -747,11 +747,12 @@ margin-left: auto;
 
 /* button close modal window */
 .close-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-top: 8px;
-    margin-right: 8px;
 
     width: 30px;
     height: 30px;
@@ -775,7 +776,7 @@ margin-left: auto;
 
 /* form order modal window */
 .data-user {
-    margin: 2px 40px 40px;
+    padding: 40px;
 }
 .form-order {
     margin-bottom: 20px;
